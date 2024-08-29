@@ -19,5 +19,15 @@ public class App {
         System.out.print("tax: ");
         emp.tax = sc.nextDouble();
         
+        System.out.println();
+        System.out.println("Employee: " + emp);
+        System.out.println();
+        System.out.print("Which percentage to increase salary? ");
+        double percentage = sc.nextDouble();
+        emp.increaseSalary(percentage);
+        System.out.println();
+        System.out.println("Updated data: " + emp);
+        sc.close();
+
     }
 }
